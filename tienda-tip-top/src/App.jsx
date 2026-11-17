@@ -16,13 +16,20 @@ const App = () => {
         <DropGrid onAddToCart={() => setCartCount((count) => count + 1)} />
         <section className="manifesto" id="nosotros">
           <div>
-            <p className="section-kicker">No es solo merch. Es memoria.</p>
-            <h2>Vístete de lo que sientes.</h2>
+            <p className="section-kicker">Haz tu pedido ahora mismo y reserva tu drop favorito</p>
+            <h2>Envíos con toda la confianza de Shalom</h2>
           </div>
           <div className="manifesto-copy">
-            <p className="manifesto-mark" aria-hidden="true">T/T</p>
+            <div className="ship-info">
+              <p>
+                Haz tus pedidos a través de nuestras redes sociales{" "}
+                <a href="https://www.instagram.com/tpop.pe/" target="_blank" rel="noopener noreferrer">@tpop.pe</a> &nbsp;•&nbsp;
+                Envíos a Lima y provincias <br />
+                📦 Envíos todos los martes y miércoles
+              </p>
+            </div>
             <p>
-              Tip Top nace de los discos que nos cambian el pulso. Diseñamos
+              tpop nace de los discos que nos cambian el pulso. Diseñamos
               piezas para llevar esa energía contigo: honestas, cómodas y hechas
               para durar más que una temporada.
             </p>

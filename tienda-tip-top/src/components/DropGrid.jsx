@@ -12,12 +12,19 @@ const DropGrid = ({ onAddToCart }) => (
     </div>
     <div className="drop-list">
       {products.map((product, index) => (
-        <DropCard
-          key={product.id}
-          product={product}
-          index={index}
-          onAddToCart={onAddToCart}
-        />
+        <>
+          <DropCard
+            key={product.id}
+            product={product}
+            index={index}
+            onAddToCart={onAddToCart}
+          />
+          {index < products.length - 1 && (
+            <div className="drop-separator" key={`sep-${index}`}>
+              <img className="drop-separator-img" src={product.image} alt="" loading="lazy" />
+            </div>
+          )}
+        </>
       ))}
     </div>
   </section>
